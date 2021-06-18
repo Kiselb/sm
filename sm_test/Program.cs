@@ -129,8 +129,6 @@ namespace sm_test
 
                         EdgesProcess(elements, edge1, edge2);
 
-                        //Console.WriteLine("Angle: {0} Height: {1}", angle, height);
-
                     }
                 }
             }
@@ -146,8 +144,8 @@ namespace sm_test
                 Console.WriteLine("Введите имя файла");
 
                 String file_name = Console.ReadLine();
-                StreamReader sr = new StreamReader(@"D:\EDUCATION\SM\ппд 1х3х5 д0,3 с фасками.stp");
-                //StreamReader sr = new StreamReader(file_name); // (@"D:\EDUCATION\SM\ппд 1х3х5 д0,3 с фасками.stp");
+                //StreamReader sr = new StreamReader(@"D:\EDUCATION\SM\ппд 1х3х5 д0,3 с фасками.stp");
+                StreamReader sr = new StreamReader(file_name); // (@"D:\EDUCATION\SM\ппд 1х3х5 д0,3 с фасками.stp");
                 line = sr.ReadLine();
 
                 while(line != null) {
